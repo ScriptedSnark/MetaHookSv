@@ -3461,7 +3461,7 @@ void R_RenderUserFog(void)
 	r_fog_control[1] = (*g_UserFogEnd);
 	r_fog_control[2] = (*g_UserFogDensity);
 
-	r_fog_mode = GL_EXP2;
+	r_fog_mode = GL_LINEAR;
 	r_fog_enabled = true;
 
 	R_SetupFog();
