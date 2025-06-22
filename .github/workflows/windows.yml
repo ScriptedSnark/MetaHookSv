@@ -2,11 +2,8 @@ name: windows
 
 on:
   push:
-    tags:
-      - "v*"
   pull_request:
-    tags:
-      - "v*"
+  workflow_dispatch:
 
 env:
   # Path to the solution file relative to the root of the project.
